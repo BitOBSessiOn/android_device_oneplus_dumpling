@@ -1,0 +1,11 @@
+/firmware       vfat    /dev/block/sde10
+/boot           emmc    /dev/block/sde19
+/system         ext4    /dev/block/bootdevice/by-name/system
+/system_image	emmc	/dev/block/bootdevice/by-name/system
+/data           ext4    /dev/block/sda13	flags=encryptable=footer;length=-16384
+/cache          ext4    /dev/block/sda3
+/recovery       emmc    /dev/block/sde22
+/system_image	emmc    /dev/block/sde21
+/persist        ext4    /dev/block/sda2
+/misc           emmc    /dev/block/sda4
+/dsp            emmc    /dev/block/sde11
