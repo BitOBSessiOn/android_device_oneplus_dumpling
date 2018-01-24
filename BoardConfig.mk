@@ -25,6 +25,8 @@
 
 BOARD_PATH := device/oneplus/dumpling
 
+TARGET_OTA_ASSERT_DEVICE := OnePlus5T,dumpling,oneplus5t,op5t,A5010,OnePlus 5T
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -104,6 +106,10 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_IGNORE_MISC_WIPE_DATA := true
 
+BOARD_SUPPRESS_EMMC_WIPE := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_NO_LEGACY_PROPS := 1
+
 # MR config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
 
@@ -128,7 +134,7 @@ MR_KEXEC_MEM_MIN := 0xAC000000
 MR_KEXEC_DTB := true
 MR_DEVICE_HOOKS := $(BOARD_PATH)/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 6
-MR_DEVICE_VARIANTS := dumpling oneplus5t OnePlus5T A5010
+MR_DEVICE_VARIANTS := dumpling, oneplus5t, OnePlus5T, A5010
 
 # Encryption support
 #MR_ENCRYPTION := true
