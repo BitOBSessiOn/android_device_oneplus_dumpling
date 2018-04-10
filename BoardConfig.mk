@@ -86,7 +86,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION = true
+#TARGET_HW_DISK_ENCRYPTION = true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
