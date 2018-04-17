@@ -108,7 +108,8 @@ TW_IGNORE_MISC_WIPE_DATA := true
 
 #TARGET_RECOVERY_FSTAB := $(BOARD_PATH)/recovery/root/fstab.qcom
 BOARD_SUPPRESS_EMMC_WIPE := true
-TW_NO_LEGACY_PROPS := 1
+#TW_NO_LEGACY_PROPS := 1
+#TW_USE_TOOLBOX := true
 
 # MR config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
